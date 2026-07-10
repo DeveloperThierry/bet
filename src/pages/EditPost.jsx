@@ -35,6 +35,18 @@ const EditPost = ({ data }) => {
     window.location = "/";
   };
 
+  // DELETE post
+const deletePost = async (event) => {
+    event.preventDefault();
+  
+    await supabase
+      .from('Posts')
+      .delete()
+      .eq('id', id); 
+  
+    window.location = "/";
+  }
+
   return (
     <div>
       <form>
@@ -71,8 +83,8 @@ const EditPost = ({ data }) => {
         ></textarea>
         <br />
         <input type="submit" value="Submit" onClick={updatePost}/>
-        <button className="deleteButton">Delete</button>
-      </form>
+        <button className="deleteButton" onClick={deletePost}>Delete</button>
+        </form>
     </div>
   );
 };
