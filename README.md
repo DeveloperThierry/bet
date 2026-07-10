@@ -1,3 +1,4 @@
+![Image](/public/image.png)
 # Bet
 
 A forum built for Gen Z thrill-seekers where users can post, accept, and track community challenges.
