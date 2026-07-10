@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { supabase } from "../client";
+import { supabase } from "../client.js";
 import Card from "../components/Card";
 
 const ReadPosts = (props) => {
@@ -30,6 +30,7 @@ const ReadPosts = (props) => {
               title={post.title}
               author={post.author}
               description={post.description}
+              betCount={post.betCount}
             />
           ))
       ) : (

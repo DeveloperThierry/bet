@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import { supabase } from "../client";
+import { supabase } from "../client.js";
 import "./EditPost.css";
 
 const EditPost = ({ data }) => {
